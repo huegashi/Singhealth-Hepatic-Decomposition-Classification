@@ -55,7 +55,7 @@ Output: optimistaion metric results\
 # 1. Purpose and Scope
 <a id="target-11-purpose"></a>
 ## 1.1 Purpose
-The following pipieline is developed to automate the binary extraction of structured data of hepatic decomposition events from unstructured clinical notes.
+The following pipeline is developed to automate the binary extraction of structured data of hepatic decomposition events from unstructured clinical notes.
 <a id="target-12-inputs-and-outputs"></a>
 ## 1.2 Inputs and Outputs
 Input; example of clinical note:
@@ -186,7 +186,7 @@ To list specific keywords in the keyword map that has to be found in a certain f
 
 ### Writing Prompts 
 Variables: `CATEGORY_PROMPTS`\
-Prompt for the llm. For 4B models, writing overly complex or long prompts easily cause hallucination. Llms are particularly sensitive to prompting and its better to acheive garunteed results from adjusting other parts than the prompt. To reduce the length of prompt and confusion per label, i have seperated prompts to per label. The llm deduces negative or positive label by label - when looking at all 7 labels, it will look one by one at each label and its prompt to dedeuce the deicision.
+Prompt for the llm. For 4B models, writing overly complex or long prompts easily cause hallucination. Llms are particularly sensitive to prompting and its better to acheive guaranteed results from adjusting other parts than the prompt. To reduce the length of prompt and confusion per label, i have seperated prompts to per label. The llm deduces negative or positive label by label - when looking at all 7 labels, it will look one by one at each label and its prompt to dedeuce the deicision.
 
 ### Second layer of Snippet refinement/filter
 Function: `the_bouncer_score`\
